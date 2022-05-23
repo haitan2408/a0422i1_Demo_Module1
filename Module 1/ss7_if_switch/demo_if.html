@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemThi = parseInt(prompt("Mời bạn nhập vào điểm thi."));
+    if (diemThi > 75) {
+        alert("Pass+ very good");
+    } else if (diemThi < 60) {
+        alert("Thi lại")
+        let diemThiLai = parseInt(prompt("Mời bạn nhập điểm thi lại."));
+        if (diemThiLai < 60) {
+            alert("Fail")
+        } else {
+            alert("Pass")
+        }
+    } else {
+        alert("Pass")
+    }
+</script>
+</body>
+</html>
