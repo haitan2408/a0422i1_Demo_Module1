@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img id="img-a" src="Images/Hinh 1a.png" height="500" width="130" onclick="changeImageA()"/>
+
+<img src="Images/Hinh 2b.png" height="500" width="130"/>
+
+<img src="Images/Hinh 3c.png" height="500" width="130"/>
+
+<img src="Images/Hinh 1d.png" height="500" width="130"/>
+
+<img src="Images/Hinh 2e.png" height="500" width="130"/>
+</body>
+<script>
+    let tempA = 0;
+    let tempB = 0;
+    let tempC = 0;
+    let tempD = 0;
+    let tempE = 0;
+
+    function changeImageA() {
+        if (tempA == 0) {
+            document.getElementById("img-a").src = "Images/Hinh 2a.png";
+            tempA++;
+        } else if (tempA == 1) {
+            document.getElementById("img-a").src = "Images/Hinh 3a.png";
+            tempA++;
+        } else {
+            document.getElementById("img-a").src = "Images/Hinh 1a.png";
+            tempA = 0;
+
+            check();
+        }
+    }
+
+    function check() {
+        if (tempA == tempB && tempB == tempC) {
+            alert("Chúc mừng ghé đúng")
+        }
+    }
+
+</script>
+</html>
